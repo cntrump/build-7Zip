@@ -1,0 +1,19 @@
+name: "7-Zip CI"
+on: 
+  push:
+    branches:
+      - main 
+      - master
+  pull_request:
+    branches: 
+      - '*'
+jobs:
+  macOS:
+    name: Build on  macOS
+    runs-on: macos-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Build
+        run: ./build.sh
+
