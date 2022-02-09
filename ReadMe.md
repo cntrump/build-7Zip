@@ -1,4 +1,4 @@
-# Build 7-Zip for macOS
+# Build [7-Zip](https://sourceforge.net/projects/sevenzip/files/7-Zip/) for macOS
 
 macOS version min: 10.13
 
