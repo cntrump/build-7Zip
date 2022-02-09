@@ -21,7 +21,7 @@ else
   pushd .
 fi
 
-cd CPP/7zip/Bundles/Alone2
+pushd CPP/7zip/Bundles/Alone2
 
 export SDKROOT=`xcrun --sdk macosx --show-sdk-path`
 export MACOSX_DEPLOYMENT_TARGET=10.13
@@ -34,6 +34,8 @@ lipo -archs b/7zz
 otool -L b/7zz
 
 b/7zz --help
+
+popd
 
 popd
 
